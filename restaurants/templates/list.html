@@ -2,9 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>List</title>
+        <title>My restaurants</title>
     </head>
     <body>
-
+        <h1>List of Restaurants</h1>
+        {% for restaurant in my_list %}
+        <h2>Restaurant: {{restaurant.restaurant_name}}</h2> 
+        <h3>Food type: {{restaurant.food_type}}</h3>
+        {% endfor %} 
     </body>
 </html>
